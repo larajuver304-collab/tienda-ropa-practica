@@ -113,6 +113,7 @@ header h1{
     background: linear-gradient(to right, rgb(180, 180, 180), gray);
     height: 1200px;
     width: 100%;
+    flex-wrap: wrap;
 
 }           /*SECCIÓN OFERTAS */
 .ofertasmain img{
@@ -414,11 +415,6 @@ table{
     height: 400px;
     background-color: white;
 }
-table{
-    width: 640px;
-    height: 400px;
-    background-color: white;
-}
 th,td{
     border: 1px solid black;
 }
@@ -605,7 +601,7 @@ td{
         right: 30px;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) { /*CELULARRR----------------------------------*/
     header {
         flex-direction: column;
         height: 170px;
@@ -694,7 +690,7 @@ td{
     .ofertas{
         height: auto;
     }
-}
+
 
 .video_presentacion{
         height: auto;
@@ -703,7 +699,9 @@ td{
     .video_presentacion h2{
         margin: auto;
     }
-
+    .videogogo{
+            width: 80%;
+    }
 
     .formulario{
         display: flex;
@@ -771,3 +769,4 @@ td{
         right: 30px;
     }
 
+}
