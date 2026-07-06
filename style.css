@@ -248,6 +248,10 @@ h5{
     width: 800px;
     padding: 20px;
     box-shadow: 0 0 50px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .zona_categorias img{ 
     object-fit: cover;
@@ -323,20 +327,22 @@ h5{
 .formulario{
     background: linear-gradient(to right, rgb(180, 180, 180), gray);
     display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    gap: 20px;
+
 }
 form{
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: auto;
     gap: 8px;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
     background-color: rgb(185, 185, 185);
-    padding-right: 30px;
     box-shadow: 0 0 20px black;
-
-    
+    justify-content: center;
+    align-items: center;
 }
 label{
     font-size: 20px;
@@ -347,7 +353,6 @@ input{
     padding: 10px;
     border-radius: 7px;
     transition: 0.3s;
-    
 }
 form button{
     width: 200px;
@@ -386,7 +391,8 @@ form textarea:hover{
 }
 iframe{
     border-radius: 20px;
-    width: 460px;
+    width: 100%;
+    max-width: 460px;
     box-shadow: 0 0 50px gray;
 }
 
@@ -397,11 +403,16 @@ iframe:hover{
 .tabla{
     width: 40%;
     text-align: center;
-    margin:auto;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0;
     border-collapse: collapse;
 
+}
+
+table{
+    width: 100%;
+    max-width: 640px;
+    height: 400px;
+    background-color: white;
 }
 table{
     width: 640px;
@@ -427,4 +438,336 @@ td:hover{
 td{
     transition: 0.3s;
 }
+
+
+/*RESPONSIVE*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    /*HEADER*/
+    header {
+        flex-direction: column;
+        height: 170px;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        position: static;
+    }
+    header h1{
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    nav a{
+        margin-right: 0px;
+        padding: 20px;
+        margin: 10px;
+    }  
+    /*MAIN PRODUCTOS*/
+    .productos{
+        margin-top: -70px;  
+        height: auto;
+        padding-bottom: 40px;
+
+    }
+    .producto{
+        width: 100px;
+        width: 40%;
+        margin-top: 0;
+    }
+    .producto h3,p{
+        padding: 0;
+        padding-top: 15px;
+    }
+    .producto img{
+        width: 100%;
+        height: auto;
+    }
+    .productosmain{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+        height: auto;
+    }
+    /*OFERTASSSSS*/
+    .ofertasmain{
+        flex-direction: column;
+        align-items: center;
+        gap: 130px;
+        padding-bottom: 100px;
+    }
+    .zona_ofertas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: -300px;
+    }
+    .oferta{
+        width: 40%;
+    }
+    .oferta img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .productos_categorias{
+        width: 90%;
+        max-width: 45%;
+    }
+    .zona_categorias{
+        width: 80%;
+        height: auto;
+        margin: auto;
+
+    }
+    .zona_categorias img{
+        width: 100%;
+    }
+    .ofertas{
+        height: auto;
+    }
+    /*VIDEOOOO*/
+
+    .video_presentacion{
+        height: auto;
+        width: 100%;
+    }
+    .video_presentacion h2{
+        margin: auto;
+    }
+
+
+    .formulario{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        width: 90%;
+        padding: 0;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    form input{
+        width: 70%;
+    }
+    form textarea{
+        width: 70%;
+    }
+    .MAPA{
+        display: flex;
+        width: 60%;
+        height: auto;
+        justify-content:center;
+        flex-direction: column;
+    }
+    iframe{
+        height: 300px;
+        width: auto;
+        justify-content:center ;
+        align-items: center;
+    }
+    .tabla{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .zona_categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*FOOTER*/
+    .finall{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px 0;
+        
+    }
+    .redes{
+        margin: auto;
+        margin: 5px;
+    }
+    h5{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .wsp img{
+        right: 30px;
+    }
+}
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        height: 170px;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        position: static;
+    }
+    header h1{
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    nav a{
+        margin-right: 0px;
+        padding: 20px;
+        margin: 10px;
+    }
+/*PRODUCTOOO*/
+.productos{
+        margin-top: -70px;  
+        height: auto;
+        padding-bottom: 40px;
+
+    }
+    .producto{
+        width: 100px;
+        width: 80%;
+        margin-top: 0;
+    }
+    .producto h3,p{
+        padding: 0;
+        padding-top: 15px;
+    }
+    .producto img{
+        width: 100%;
+        height: auto;
+    }
+    .productosmain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+        height: auto;
+    }
+    /*OFERTAAAA*/
+    .ofertasmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 130px;
+        padding-bottom: 100px;
+    }
+    .zona_ofertas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -300px;
+    }
+    .oferta{
+        width: 70%;
+    }
+    .oferta img{
+        object-fit: cover;
+        width: 100%;
+    }
+    /*CATEGORIAAA*/
+    .productos_categorias{
+        width: 100%;
+        max-width: 45%;
+    }
+    .zona_categorias{
+        width: 70%;
+        height: auto;
+        margin: auto;
+
+    }
+    .zona_categorias img{
+        width: 100%;
+    }
+    .ofertas{
+        height: auto;
+    }
+}
+
+.video_presentacion{
+        height: auto;
+        width: 100%;
+    }
+    .video_presentacion h2{
+        margin: auto;
+    }
+
+
+    .formulario{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        width: 90%;
+        padding: 0;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    form input{
+        width: 70%;
+    }
+    form textarea{
+        width: 70%;
+    }
+    .MAPA{
+        display: flex;
+        width: 60%;
+        height: auto;
+        justify-content:center;
+        flex-direction: column;
+    }
+    iframe{
+        height: 300px;
+        width: auto;
+        justify-content:center ;
+        align-items: center;
+    }
+    .tabla{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .zona_categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .finall{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px 0;
+        
+    }
+    .redes{
+        margin: auto;
+        margin: 5px;
+    }
+    h5{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .wsp img{
+        right: 30px;
+    }
 
