@@ -698,12 +698,13 @@ td{
     }
 
 
-.video_presentacion{
+    .video_presentacion{
         height: auto;
         width: 100%;
     }
     .video_presentacion h2{
         margin: auto;
+        font-size: 20px;
     }
     .videogogo{
             width: 80%;
